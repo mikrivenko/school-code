@@ -4,48 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>code.school ITI examples</title>
+    <title>Document</title>
     <style>
-        body {
-            font-size: 16px;
-            padding: 20px;
-        }
-        a.lesson {
+        .short-info {
             position: relative;
-            display: inline-block;
-            padding: 8px 16px;
-            margin: 4px 0px;
-            border-left: #505050 solid 4px;
-            color: #505050;
-            background: #50505015;
-        }
-        a.lesson:hover {
-            background-color: #505050;
+            display: grid;
+            overflow: hidden;
+            height: 100vh;
+            margin: 0px;
+            grid-template-columns: 1fr 1fr 2fr ;
+            grid-template-rows: 1fr 1fr 2fr;
+            grid-template-areas: 
+                    "photo photo name"
+                    "photo photo links"
+                    "about about about";
+            background: #004f55;
             color: #ffffff;
-            border-left-color: #c0c0c0;
-            text-decoration: none;
-            transition: 1s background-color, 
-                1s color, 
-                1s border-left-color;
+
+        }
+        .photo-block {
+            display: flex;
+            grid-area: photo;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 16px;
+
+        }
+        .photo-image {
+    position: relative;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #5b17b455;
+    background-image: url(https://cnet3.cbsistatic.com/img/67Sl3FEESRlc7jnJpiZQW7Ehv7Y=/2012/04/30/f6ab3806-fdc7-11e2-8c7c-d4ae52e62bcc/big_hindenburg_explodes_over_lakehurst.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+        }
+
+        .name-block {
+            grid-area: name;
+            background: #00f;
+        }
+        .about-me-block {
+            grid-area: about;
+            background: #00f;
+        }
+        .links-block {
+            grid-area: links;
+            background: #004f;
         }
     </style>
 </head>
 <body>
-    <h1>das ist mein webseit</h1>
-    <h2>Lessons examples for code.school ITI</h2>
-    <a class="lesson" href="./lesson_tags/index.html" title=" ">Ознакомление с некоторыми основными тегами</a>
-    <br>
-    <a class="lesson" href="./lesson_text/index.html" title=" ">Стилизация текста</a>
-    <br>
-    <a class="lesson" href="./lesson_links/index.html" title=" ">Ссылки</a>
-    <br>
-    <a class="lesson" href="./lesson_js/index.html" title=" ">JavaScript</a>
-    <br>
-    <a class="lesson" href="./lesson_artbox/index.html" title=" ">X-tree</a>
-    <br>
-    <a class="lesson" href="./lesson_x0/index.html" title=" ">TicTacToe game</a>
-    <br>
-    <a class="lesson" href="./lesson_transformations/index.html" title=" ">Transformations</a>
-    <br>
+    <div id="page1" class="short-info">
+        <div class="photo-block">
+            <div class="photo-image"></div>
+        </div>
+        <div class="name-block">Airship</div>
+        <div class="about-me-block"></div>
+        <div class="links-block"></div>
+    </div>    
 </body>
 </html>
