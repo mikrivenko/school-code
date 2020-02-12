@@ -16,9 +16,9 @@
             grid-template-rows: 1fr 1fr 2fr;
             grid-template-areas: 
                     "photo photo name"
-                    "photo photo links"
-                    "about about about";
-            background: #004f55;
+                    "photo photo about"
+                    "links links links";
+            background: #a1a1a173;
             color: #ffffff;
 
         }
@@ -36,7 +36,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: #5b17b455;
+    background-color: #66666655;
     background-image: url(https://cnet3.cbsistatic.com/img/67Sl3FEESRlc7jnJpiZQW7Ehv7Y=/2012/04/30/f6ab3806-fdc7-11e2-8c7c-d4ae52e62bcc/big_hindenburg_explodes_over_lakehurst.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -45,16 +45,65 @@
 
         .name-block {
             grid-area: name;
-            background: #00f;
+            display: flex ;
+            align-items: end;
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding: 16px;
+            font-size: 300%;
+            font-weight: normal;
+            background: rgb(129, 129, 129);
         }
         .about-me-block {
+            position: relative;
             grid-area: about;
-            background: #00f;
+            display: flex;
+            align-items: flex-start;
+            padding: 16px;
+            font-size: 120%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background: rgb(104, 104, 104);
         }
         .links-block {
             grid-area: links;
-            background: #004f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background: var(--color-secondary);
+            background: rgb(82, 82, 82);
         }
+        .links-block>a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: 64px;
+            width: 64px;
+            margin: 16px;
+            background: #ffffff;
+        }
+        .links-block>a.link-Vk {
+            background: 
+            url(https://cdn.iconscout.com/icon/free/png-256/vk-83446.png)
+            no-repeat 50% / contain;
+        }
+        .links-block>a.link-Facebook {
+            background: 
+            url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/480px-Facebook_logo_%28square%29.png)
+            no-repeat 50% / contain;
+        }
+        .links-block>a.link-Telegram {
+            background: 
+            url(https://pngimg.com/uploads/telegram/telegram_PNG25.png)
+            no-repeat 50% / contain;
+        }
+        .links-block>a.link-Twitter {
+            background: 
+            url(data:image/jpeg;base64,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)
+            no-repeat 50% / contain;
+        }
+
     </style>
 </head>
 <body>
@@ -64,7 +113,12 @@
         </div>
         <div class="name-block">Airship</div>
         <div class="about-me-block"></div>
-        <div class="links-block"></div>
+        <div class="links-block">
+            <a href="#page1" class="link-Vk"></a>
+            <a href="#page2" class="link-Facebook"></a>
+            <a href="#page3" class="link-Telegram"></a>
+            <a href="#page4" class="link-Twitter"></a>
+        </div>
     </div>    
 </body>
 </html>
