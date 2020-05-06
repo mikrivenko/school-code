@@ -52,29 +52,31 @@
     background-position: top;
 }
 #page-gallery .card:nth-child(3) .photo {
-    background-image: url(./../img/photo3.jpg);
+    background-image: url(https://i.kinja-img.com/gawker-media/image/upload/t_original/qnu1tco5epkkutxcbxrg.jpg);
 }
 #page-gallery .card:nth-child(4) .photo {
     background-image: url(https://i.ytimg.com/vi/oqElIW1mjlQ/maxresdefault.jpg);
-    background-position: ;
+    background-position: top;
 }
 #page-gallery .card:nth-child(5) .photo {
-    background-image: url(./../img/photo2.jpg);
-    background-position: left;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fwolfenstein%2Fimages%2Fc%2Fca%2FUnknown.jpeg%2Frevision%2Flatest%3Fcb%3D20171025065633&f=1&nofb=1);
+    background-position: center;
 }
 #page-gallery .card:nth-child(6) .photo {
-    background-image: url(./../img/photo3.jpg);
-    background-position: left;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapershome.com%2Fimages%2Fwallpapers%2Fwolfenstein-youngblood-2160x3840-e3-2019-poster-8k-21745.jpg&f=1&nofb=1);
 }
 #page-gallery .card:nth-child(7) .photo {
-    background-image: url(./../img/photo1.jpg);
+    background-image: url(https://i.kinja-img.com/gawker-media/image/upload/t_original/qnu1tco5epkkutxcbxrg.jpg);
     background-position: right;
 }
 #page-gallery .card:nth-child(8) .photo {
-    background-image: url(./../img/photo2.jpg);
-    background-position: right;
+    background-image: url(https://pbs.twimg.com/media/DMhrd0uXcAATsaE.jpg);
+    background-position: center;
 }
 #page-gallery .card:nth-child(9) .photo {
-    background-image: url(./../img/photo3.jpg);
-    background-position: right;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F236x%2F7d%2Ffe%2F5d%2F7dfe5ddef254dd04eaf444011865732c--wolfenstein-the-new-order-vapen.jpg&f=1&nofb=1);
 }
+#page-gallery .card:nth-child(10) .photo {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F8f%2F45%2F52%2F8f4552ac99481888f78c2eda1204a571.jpg&f=1&nofb=1);
+    background-position: center;
+}    
